@@ -21,6 +21,8 @@ public class JpaRunner implements ApplicationRunner {
         account.setUsername("freelife");
         account.setPassword("hibernate");
 
+	    account.setAddress(new Address("street", "city", "state", "1234"));
+
         entityManager.persist(account);
 
 //        Session session = entityManager.unwrap(Session.class);
