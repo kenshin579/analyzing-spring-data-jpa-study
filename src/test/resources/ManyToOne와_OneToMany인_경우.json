@@ -1,0 +1,136 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52055,suspend=y,server=n -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:/Users/frankyoh/Library/Caches/IntelliJIdea2018.2/captureAgent/debugger-agent.jar=file:/private/var/folders/f3/z3w0kdln2sn_7z0_qq6rn4dxrgwgh2/T/capture.props -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/tools.jar:/Users/frankyoh/IdeaProjects/analyzing-spring-data-jpa-study/target/classes:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.1.1.RELEASE/spring-boot-starter-data-jpa-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.1.1.RELEASE/spring-boot-starter-aop-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.1.1.RELEASE/spring-boot-starter-jdbc-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/javax/transaction/javax.transaction-api/1.3/javax.transaction-api-1.3.jar:/Users/frankyoh/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/frankyoh/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/frankyoh/.m2/repository/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.jar:/Users/frankyoh/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/frankyoh/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/frankyoh/.m2/repository/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar:/Users/frankyoh/.m2/repository/net/bytebuddy/byte-buddy/1.9.5/byte-buddy-1.9.5.jar:/Users/frankyoh/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/frankyoh/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/frankyoh/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/Users/frankyoh/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/frankyoh/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.jar:/Users/frankyoh/.m2/repository/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-orm/5.1.3.RELEASE/spring-orm-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-expression/5.1.3.RELEASE/spring-expression-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-aspects/5.1.3.RELEASE/spring-aspects-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar:/Users/frankyoh/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.1.RELEASE/spring-boot-starter-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.1.RELEASE/spring-boot-starter-logging-2.1.1.RELEASE.jar:/Users/frankyoh/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/frankyoh/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/frankyoh/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar:/Users/frankyoh/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar:/Users/frankyoh/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/frankyoh/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/frankyoh/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar:/Users/frankyoh/.m2/repository/org/springframework/spring-jcl/5.1.3.RELEASE/spring-jcl-5.1.3.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" me.freelife.springjpaprograming.Application
+Connected to the target VM, address: '127.0.0.1:52055', transport: 'socket'
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::        (v2.1.1.RELEASE)
+
+2020-10-23 16:28:30.641  INFO 75525 --- [           main] m.f.springjpaprograming.Application      : Starting Application on IMAC-FRANKYOH.local with PID 75525 (/Users/frankyoh/IdeaProjects/analyzing-spring-data-jpa-study/target/classes started by frankyoh in /Users/frankyoh/IdeaProjects/analyzing-spring-data-jpa-study)
+2020-10-23 16:28:30.644  INFO 75525 --- [           main] m.f.springjpaprograming.Application      : No active profile set, falling back to default profiles: default
+2020-10-23 16:28:30.983  INFO 75525 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-23 16:28:31.003  INFO 75525 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2020-10-23 16:28:31.344  INFO 75525 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-23 16:28:31.449  INFO 75525 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-23 16:28:31.493  INFO 75525 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+name: default
+...]
+2020-10-23 16:28:31.559  INFO 75525 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2020-10-23 16:28:31.561  INFO 75525 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-23 16:28:31.709  INFO 75525 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-23 16:28:31.824  INFO 75525 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-10-23 16:28:32.158  INFO 75525 --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2020-10-23 16:28:32.163  INFO 75525 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6d2a2560
+Hibernate:
+
+alter table if exists account_studies
+drop constraint if exists FKem9ae62rreqwn7sv2efcphluk
+Hibernate:
+
+alter table if exists account_studies
+drop constraint if exists FK4h3r1x3qcsugrps8vc6dgnn25
+Hibernate:
+
+alter table if exists study
+drop constraint if exists FK210g5r7wftvloq2ics531e6e4
+Hibernate:
+
+drop table if exists account cascade
+Hibernate:
+
+drop table if exists account_studies cascade
+Hibernate:
+
+drop table if exists study cascade
+Hibernate:
+
+drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start 1 increment 1
+Hibernate:
+
+create table account (
+id int8 not null,
+password varchar(255),
+username varchar(255) not null,
+primary key (id)
+)
+Hibernate:
+
+create table account_studies (
+account_id int8 not null,
+studies_id int8 not null,
+primary key (account_id, studies_id)
+)
+Hibernate:
+
+create table study (
+id int8 not null,
+name varchar(255),
+owner_id int8,
+primary key (id)
+)
+Hibernate:
+
+alter table if exists account
+add constraint UK_gex1lmaqpg0ir5g1f5eftyaa1 unique (username)
+Hibernate:
+
+alter table if exists account_studies
+add constraint UK_tevcop76y9etp9vx5vce7gns6 unique (studies_id)
+Hibernate:
+
+alter table if exists account_studies
+add constraint FKem9ae62rreqwn7sv2efcphluk
+foreign key (studies_id)
+references study
+Hibernate:
+
+alter table if exists account_studies
+add constraint FK4h3r1x3qcsugrps8vc6dgnn25
+foreign key (account_id)
+references account
+Hibernate:
+
+alter table if exists study
+add constraint FK210g5r7wftvloq2ics531e6e4
+foreign key (owner_id)
+references account
+2020-10-23 16:28:32.708  INFO 75525 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@46cf8c07'
+2020-10-23 16:28:32.710  INFO 75525 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-23 16:28:32.816  INFO 75525 --- [           main] m.f.springjpaprograming.Application      : Started Application in 2.409 seconds (JVM running for 2.852)
+Hibernate:
+select
+nextval ('hibernate_sequence')
+Hibernate:
+select
+nextval ('hibernate_sequence')
+Hibernate:
+insert
+into
+account
+(password, username, id)
+values
+(?, ?, ?)
+Hibernate:
+insert
+into
+study
+(name, owner_id, id)
+values
+(?, ?, ?)
+Hibernate:
+insert
+into
+account_studies
+(account_id, studies_id)
+values
+(?, ?)
+Disconnected from the target VM, address: '127.0.0.1:52055', transport: 'socket'
+2020-10-23 16:28:32.972  INFO 75525 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-23 16:28:32.974  INFO 75525 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-23 16:28:32.976  INFO 75525 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+Process finished with exit code 0
