@@ -29,7 +29,7 @@ public class JpaRunner implements ApplicationRunner {
         Study study = new Study();
         study.setName("Spring Data JPA" + System.currentTimeMillis());
 
-        account.getStudies().add(study); //종속관계 관계 설정
+        account.getStudies().add(study); //종속관계 관계 설정 (객체에서도 용의함)
         study.setOwner(account); //주인이 되는 쪽 관계 설정
 
         entityManager.persist(account);
