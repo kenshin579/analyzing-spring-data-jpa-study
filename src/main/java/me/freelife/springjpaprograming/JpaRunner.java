@@ -18,8 +18,9 @@ public class JpaRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         /*
-        단방향 관계
-        - account_studies 라는 Mapping 테이블을 만듬
+        양방향 관계
+        - 반드시 주인이 되는 쪽에 관계를 설정하는 로직을 해야함
+        - 주인이 되는 쪽만 설정해줘도 되지만 객체지향적으로 서로서로 관계를 반드시 설정해줘야함
          */
         Account account = new Account();
         account.setUsername("freelife");
@@ -27,7 +28,9 @@ public class JpaRunner implements ApplicationRunner {
 
         Study study = new Study();
         study.setName("Spring Data JPA" + System.currentTimeMillis());
-        account.getStudies().add(study);
+
+        account.getStudies().add(study); //종속관계 관계 설정
+        study.setOwner(account); //주인이 되는 쪽 관계 설정
 
         entityManager.persist(account);
         entityManager.persist(study);
