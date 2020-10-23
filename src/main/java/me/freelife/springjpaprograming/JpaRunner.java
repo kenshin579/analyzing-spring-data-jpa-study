@@ -19,8 +19,7 @@ public class JpaRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         /*
         단방향 관계
-        - Study 테이블안에 Account 테이블의 PK를 참조하는 FK 컬럼을 생성해서 가지고 있게 됨
-        - owner라고 줬지만 owner_id라고 생성이 되고 owner_id에 대한 constraints 가 foreign key로 잡힘
+        - account_studies 라는 Mapping 테이블을 만듬
          */
         Account account = new Account();
         account.setUsername("freelife");
@@ -28,7 +27,7 @@ public class JpaRunner implements ApplicationRunner {
 
         Study study = new Study();
         study.setName("Spring Data JPA" + System.currentTimeMillis());
-        study.setOwner(account);
+        account.getStudies().add(study);
 
         entityManager.persist(account);
         entityManager.persist(study);
