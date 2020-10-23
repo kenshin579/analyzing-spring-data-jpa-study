@@ -19,7 +19,7 @@ public class Account {
     private String username;
     private String password;
 
-    @OneToMany
+    @OneToMany(mappedBy = "owner") //@OneToMany쪽에 양방향 설정 (owner가 fk쪽이라는 곳을 지정하여 알려주는 거임)
     private Set<Study> studies = new HashSet<>();
 
     //편의 메서드
