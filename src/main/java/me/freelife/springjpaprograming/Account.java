@@ -19,8 +19,8 @@ public class Account {
     private String username;
     private String password;
 
-//    @OneToMany
-//    private Set<Study> studies = new HashSet<>();
+    @OneToMany
+    private Set<Study> studies = new HashSet<>();
 
     //편의 메서드
 //    public void addStudy(Study study) {
