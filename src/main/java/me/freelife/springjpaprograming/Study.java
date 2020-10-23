@@ -18,6 +18,7 @@ public class Study {
 
     private String name;
 
-    @ManyToOne
+
+    @ManyToOne //<-- 이 어노테이션으로 Study에 FK가 생성이 됨 (owner_id)
     private Account owner;
 }
