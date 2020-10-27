@@ -3,13 +3,16 @@ package me.freelife.springjpaprograming;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Set;
 
 @Getter
 @Setter
-@ToString
 @Entity
 public class Post {
 
@@ -22,5 +25,12 @@ public class Post {
     public void addComment(Comment comment) {
         this.getComments().add(comment);
         comment.setPost(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "title='" + title + '\'' +
+                '}';
     }
 }
