@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import java.util.Date;
 
 @Getter
 @Setter
@@ -17,6 +16,8 @@ public class Comment {
     @Id @GeneratedValue
     private Long id;
     private String comment;
+
+    private Integer likeCount; //Like의 경우 예약어라 오류가 발생함 likeCount로 변경함
 
     @ManyToOne
     private Post post;
