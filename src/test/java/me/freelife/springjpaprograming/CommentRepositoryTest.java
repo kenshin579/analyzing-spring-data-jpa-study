@@ -19,7 +19,13 @@ public class CommentRepositoryTest {
     CommentRepository commentRepository;
 
     @Test
-    public void crud() {
+    public void crud1() {
+        commentRepository.save(null); //@NotNull 어노테이션으로
+        //java.lang.IllegalArgumentException: Parameter entity in MyRepository.save must not be null!
+    }
+
+    @Test
+    public void crud2() {
         Optional<Comment> byId = commentRepository.findById(100l);
         assertThat(byId).isEmpty();
         //Comment comment = byId.orElse(new Comment()); // Optional 객체가 비어있으면 Comment 만들어서 리턴
