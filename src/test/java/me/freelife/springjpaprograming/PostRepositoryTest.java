@@ -20,9 +20,27 @@ public class PostRepositoryTest {
     @Autowired
     PostRepository postRepository;
 
+    /**
+     * hibernate는 필요할때만 데이터베이스에 Query를 Sync하는데 Rollback한 Query라서 데이터를 Insert하지 않음
+     * 결론적으로 ID 만 가져오고 Insert Query를 날리지 않고 끝냄
+     */
+    @Test
+    public void crudRepository1() {
+        // Given - 이런 조건 하에서
+        Post post = new Post();
+        post.setTitle("hello spring boot common");
+        assertThat(post.getId()).isNull();
+
+        // When - 이렇게 했을때
+        Post newPost = postRepository.save(post);
+
+        // Then - 이렇게 되길 바란다
+        assertThat(newPost.getId()).isNotNull();
+    }
+
     @Test
     @Rollback(false)
-    public void crudRepository() {
+    public void crudRepository2() {
         // Given - 이런 조건 하에서
         Post post = new Post();
         post.setTitle("hello spring boot common");
