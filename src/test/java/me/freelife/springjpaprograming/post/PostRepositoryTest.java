@@ -32,7 +32,7 @@ public class PostRepositoryTest {
     */
 
     @Test
-    public void crud() {
+    public void crud_aggregationRoot() {
         Post post = new Post();
         post.setTitle("hibernate");
 
