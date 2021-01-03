@@ -15,10 +15,10 @@ public class CommentRepositoryTest {
 
     @Test
     public void getComment() {
-        commentRepository.getById(1l);
+        commentRepository.getById(1l); //join해서 가져옴 (@EntityGraph)
 
         System.out.println("=================================");
 
-        commentRepository.findById(1l);
+        commentRepository.findById(1l); //comment만 가져옴
     }
 }
